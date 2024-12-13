@@ -1,0 +1,139 @@
+.footerContainer {
+  background-color: #000000;
+  padding: 20px;
+  color: white;
+}
+.mobileView {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.desktopView {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .footerContainer {
+    width: 100wh;
+    height: 730px;
+  }
+  .bethefirstContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .mettaContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .emailInput {
+    height: 47px;
+    width: 200px;
+    padding: 0px 20px 0px 20px;
+    margin-right: 20px;
+  }
+  .subscribeBtn {
+    width: 109px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  .selectContainer {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+  }
+  .selectContainer:active {
+    border: none;
+  }
+  .followContainer {
+    border-bottom: 1px solid white;
+  }
+}
+@media screen and (min-width: 420px) {
+  .footerContainer {
+    width: 100wh;
+    height: 750px;
+  }
+  .bethefirstContainer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 90px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .mobileView {
+    display: none;
+  }
+  .desktopView {
+    display: block;
+    display: flex;
+  }
+  .emailInput {
+    width: 60%;
+    height: 48px;
+    padding-left: 20px;
+  }
+  .subscribeBtn {
+    height: 51px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-family: Simplon Norm;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    padding: 10px 40px;
+    color: #ffffff;
+  }
+  .mettaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 90px;
+  }
+  .desktopMetta {
+    margin-right: 50px;
+  }
+  .desktopMetta > h3 {
+    font-family: Simplon Norm;
+    font-size: 24.71px;
+    font-weight: 700;
+    line-height: 29.66px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .mettaList {
+    list-style: none;
+    min-width: 200px;
+  }
+  .mettaList > li {
+    margin-bottom: 10px;
+    font-family: Simplon Norm;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bethefirstContainer {
+    margin: 10px 200px;
+  }
+  .mettaContainer {
+    margin: 40px 200px;
+  }
+  .mettaList {
+    margin-right: 100px;
+  }
+}

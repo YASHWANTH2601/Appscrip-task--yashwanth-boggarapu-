@@ -1,0 +1,71 @@
+.comapnyBannerMobile,
+.comapnyBannerDesktop {
+  background-color: #000;
+  height: 40px;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.languageChange {
+  display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .navBar {
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .comapnyBannerMobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .comapnyBannerDesktop {
+    display: none;
+  }
+  .navBarRightMobile {
+    display: block;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+  }
+  .navBarRightMobile > li {
+    margin-right: 10px;
+  }
+  .navBarRightDesktop {
+    display: none;
+  }
+  .hamburger {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .comapnyBannerMobile {
+    display: none;
+  }
+  .comapnyBannerDesktop {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .navBarRightMobile {
+    display: none;
+  }
+  .navBarRightDesktop {
+    display: block;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .navBarRightDesktop > li {
+    margin-right: 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
